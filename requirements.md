@@ -20,4 +20,8 @@
 - [ ] create table messages (id, message)
 - [ ] after an user send a message save the message and emit the message with the new id created to the client
 - [ ] ⚡ make an serverOffset so you know which message was the last one for the user ad load them from there
-- [ ] 
+- [ ] make sure the user receive the messages when it was disconnected (use socket.recovered)
+
+NOTES:
+ - everytime an user emit something in the socket the property {auth} in the "io" instance will make sure the message always goes with this.
+    You can see this information in the socket.handshake
