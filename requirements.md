@@ -1,6 +1,6 @@
 - [x] Create a `server` folder with `index.js` and start an Express app with a port passed as an environment variable.
-- [ ] Run the web server.
-- [ ] Create a script in `package.json` to run the project with `node --watch`.
+- [x] Run the web server.
+- [x] Create a script in `package.json` to run the project with `node --watch`.
 - [ ] Research what `morgan` is and install it.
 - [ ] make a client folder where you will have the index.html file 
 - [ ] create the chat in the index.html
