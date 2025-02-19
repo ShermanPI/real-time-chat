@@ -1,8 +1,8 @@
 - [x] Create a `server` folder with `index.js` and start an Express app with a port passed as an environment variable.
 - [x] Run the web server.
 - [x] Create a script in `package.json` to run the project with `node --watch`.
-- [ ] Research what `morgan` is and install it.
-- [ ] make a client folder where you will have the index.html file 
+- [x] Research what `morgan` is and install it.
+- [x] make a client folder where you will have the index.html file 
 - [ ] create the chat in the index.html
 - [ ] send the file index.html in the routepath "/" using res.sendFile and process.cwd() 
 - [ ] install socket.io (io standing for (in / out)) explay why using socket.io and how this make the things easier like making a "handshake" with the client
