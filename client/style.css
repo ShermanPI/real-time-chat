@@ -17,14 +17,19 @@ p {
     font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
 }
 
-.chat-container{
-    display: flex;
-    flex-direction: column;
+.main-container{
     height: 100vh;
     width: 100%;
     max-width: 600px;
+    background-color: #A9B5DF;
     margin: auto;
-    background-color: #2D336B;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.chat-container{
+    height: 100%;
 }
 
 .message{
@@ -32,9 +37,41 @@ p {
 }
 
 .chat-container .message:nth-child(odd){
-    background-color:  #A9B5DF;
+    background-color:  #2D336B;
+    color: white;
 }
 
 .chat-container .message:nth-child(even){
     background-color:  #7886C7;
+}
+
+.chat-header {
+    padding: 1rem 2rem;
+    background-color: white;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.messages-container{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+}
+
+#message-form{
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    position: absolute;
+    bottom: 0;
+}
+
+#message-input{
+    width: 100%;
+    padding: 0.6rem;
+    outline: none;
+}
+
+#send-btn{
+    padding: 0.6rem 1.2rem;
 }

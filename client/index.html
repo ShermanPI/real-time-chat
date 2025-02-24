@@ -5,16 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat</title>
     <link rel="stylesheet" href="style.css">
+    <script type="module" src="index.js"></script>
 </head>
 <body>
-    <main>
+    <main class="main-container">
+        <header class="chat-header">
+            MY CHAT 
+        </header>
         <div class="chat-container">
-            <div class="message">
-                HI
+            <div class="messages-container">
+                <div class="message">
+                    HI
+                </div>
+                <div class="message">
+                    HI
+                </div>
             </div>
-            <div class="message">
-                HI
-            </div>
+            <form id="message-form">
+                <input type="text" id="message-input" placeholder="Type a message here...">
+                <button type="submit" id="send-btn">Enviar</button>
+            </form>
         </div>
     </main>
 </body>
